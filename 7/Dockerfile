@@ -31,9 +31,9 @@ mv /src/php-fpm.conf /usr/local/etc/php-fpm.conf && \
 mv /src/www.conf /usr/local/etc/php-fpm.d/www.conf && \
 mv /src/php-fpm.sh /etc/service/php-fpm/run && \
 mv /src/nginx.sh /etc/service/nginx/run && \
-mv /src/runsvdir-start.sh /usr/local/sbin/runsvdir-start && \
+mv /src/runsvdir-start.sh /sbin/runsvdir-start && \
 rm -rf /src
 
 EXPOSE 80
 
-CMD ["/usr/local/sbin/runsvdir-start"]
+CMD ["/sbin/runsvdir-start"]
